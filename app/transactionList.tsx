@@ -37,7 +37,7 @@ export default function transactionList() {
                   <H4>List of transactions</H4>
                 </YStack>
                 <FlashList
-                  data={history.reverse()}
+                  data={history}
                   estimatedItemSize={200}
                   renderItem={({ item }: { item: EmployeeTip }) => {
                     return (
