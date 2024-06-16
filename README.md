@@ -56,8 +56,6 @@ npx expo
 
 This will open the Expo Developer Tools in your browser. You can then run the project on an emulator, simulator, or physical device using the Expo Go app.
 
-### 4. Running on a Physical Device
-
 
 ## Additional Information
 
