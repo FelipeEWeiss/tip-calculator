@@ -32,7 +32,7 @@ export default function TotalTip() {
     <>
       <ScreenContent>
         <XStack flex={1} alignItems="center" justifyContent="center">
-          <YStack flex={1} maxHeight={350}>
+          <YStack flex={1} maxHeight={450}>
             <YStack alignItems="center" space="$5" style={{ paddingBottom: 20 }}>
               <H4>Total per employee</H4>
             </YStack>

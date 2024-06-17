@@ -46,6 +46,8 @@ export default function Home() {
   function handleCalculate() {
     const parsedAmount = Number(tipAmount);
     calculateTip(parsedAmount, serverName);
+
+    setTipAmount('');
   }
 
   const lastHistoryItem = history[history.length - 1];

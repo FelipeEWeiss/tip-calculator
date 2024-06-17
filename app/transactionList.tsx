@@ -30,7 +30,7 @@ export default function transactionList() {
     <>
       <ScreenContent>
         <XStack flex={1} alignItems="center" justifyContent="center">
-          <YStack flex={1} maxHeight={350}>
+          <YStack flex={1} maxHeight={450}>
             {history.length > 0 ? (
               <>
                 <YStack alignItems="center" space="$5" style={{ paddingBottom: 20 }}>
