@@ -1,4 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
+
+import { initialTransactionList } from '~/constants/contants';
 export const employees = ['Joan', 'Sean', 'Angelina', 'Paul', 'Nuala'];
 
 interface EmployeeAmounts {
@@ -25,7 +27,7 @@ interface TipProviderProps {
 }
 
 const TipProvider: React.FC<TipProviderProps> = ({ children }) => {
-  const [history, setHistory] = useState<HistoricalRecord[]>([]);
+  const [history, setHistory] = useState<HistoricalRecord[]>(initialTransactionList);
 
   function calculateTip(amount: number, serverName: string) {
     const serverTip = amount * 0.3;

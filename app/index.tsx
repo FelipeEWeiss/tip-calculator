@@ -1,7 +1,7 @@
 import { FlashList } from '@shopify/flash-list';
 import { useState } from 'react';
 import { Text } from 'react-native';
-import { H4, H6, Input, RadioGroup, XStack, YStack } from 'tamagui';
+import { H6, Input, RadioGroup, XStack, YStack } from 'tamagui';
 
 import { Button, ButtonText } from '../tamagui.config';
 
