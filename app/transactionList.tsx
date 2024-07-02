@@ -44,7 +44,13 @@ export default function transactionList() {
                       <YStack space="$5" style={{ paddingBottom: 10 }}>
                         <XStack flex={1} alignItems="center" justifyContent="space-between">
                           <Text>{item.server}</Text>
-                          <Text>{`€ ${item.amount}`}</Text>
+                          <Text>
+                            {new Intl.NumberFormat('en-IE', {
+                              style: 'currency',
+                              currency: 'EUR',
+                              minimumFractionDigits: 2,
+                            }).format(item.amount)}
+                          </Text>
                         </XStack>
                       </YStack>
                     );
